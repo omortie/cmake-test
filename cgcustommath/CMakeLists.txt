@@ -1,3 +1,4 @@
 add_library(cgcustommath SHARED custommath.cpp)
+target_link_libraries(cgcustommath eigen)
 target_include_directories(cgcustommath INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
 target_compile_definitions(cgcustommath PRIVATE CGCUSTOMMATH_LIBRARY)

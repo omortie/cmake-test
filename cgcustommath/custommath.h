@@ -5,7 +5,7 @@
 #ifndef CMAKE_TEST_CUSTOMMATH_H
 #define CMAKE_TEST_CUSTOMMATH_H
 
-#include <vector>
+#include "Eigen/Core"
 
 #if defined(CGCUSTOMMATH_LIBRARY)
 #  define DESIGNERLIBS_EXPORT __declspec(dllexport)
@@ -13,6 +13,6 @@
 #  define DESIGNERLIBS_EXPORT __declspec(dllimport)
 #endif
 
-std::vector<int> DESIGNERLIBS_EXPORT matrix(int, int);
+Eigen::Array22f DESIGNERLIBS_EXPORT matrix(int, int);
 
 #endif //CMAKE_TEST_CUSTOMMATH_H

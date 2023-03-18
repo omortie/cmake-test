@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 
-add_subdirectory(cgcustommath)
+add_subdirectory(3rdparty)
 
-add_executable(mat main.cpp)
-target_link_libraries(mat cgcustommath)
+add_subdirectory(cgcustommath)
+add_subdirectory(mat)
