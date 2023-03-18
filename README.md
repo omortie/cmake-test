@@ -21,8 +21,7 @@ matrix using eigen's array
 
 ### Windows
 You have to install msvc-compiler on you Windows machine first and then
-try the following steps in order to build the project then right-click and open the project 
-in Microsoft Visual Studio
+try the following steps in order to build the project [follow this documentation](./docs/VSBuild.md)
 
 ### Mac
 NOT AVAILABLE YET!
