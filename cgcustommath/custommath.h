@@ -7,6 +7,7 @@
 
 #include "Eigen/Core"
 
+// exporting symbols in windows-based machines for shared library
 #if defined(CGCUSTOMMATH_LIBRARY)
 #  define DESIGNERLIBS_EXPORT __declspec(dllexport)
 #else
