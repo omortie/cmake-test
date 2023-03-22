@@ -15,6 +15,8 @@
 		<Feature Id="VCRedist" Title="Visual C++ 2015-2022 Runtime" AllowAdvertise="no" Display="hidden" Level="1">
 			<MergeRef Id="VCRedist"/>
 		</Feature>
+		<UIRef Id="WixUI_InstallDir" />
+		<Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
 	</Product>
 
 	<Fragment>
