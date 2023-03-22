@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="installer" Language="1033" Version="1.0.0.0" Manufacturer="MortieInc" UpgradeCode="1c857295-9143-44db-a9b5-1fb1beb52b14">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+		<Feature Id="ProductFeature" Title="mat" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+		<DirectoryRef Id="TARGETDIR">
+			<Merge Id="VCRedist" SourceFile="..\assets\Microsoft_VC143_CRT_x64.msm" DiskId="1" Language="0"/>
+		</DirectoryRef>
+		<Feature Id="VCRedist" Title="Visual C++ 2015-2022 Runtime" AllowAdvertise="no" Display="hidden" Level="1">
+			<MergeRef Id="VCRedist"/>
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFiles64Folder">
+				<Directory Id="INSTALLFOLDER" Name="mat" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<Component Id="ProductLibrary">
+				<File Source="..\..\bin\cgcustommath.dll" />
+			</Component>
+			<Component Id="ProductExecutable">
+				<File Source="..\..\bin\mat.exe" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>
