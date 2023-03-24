@@ -1,0 +1,10 @@
+{
+    "version": 4,
+    "vendor": {
+        "conan": {}
+    },
+    "include": [
+        "D:\\Programming\\Work\\cmake-test\\build\\CMakePresets.json",
+        "D:/Programming/Work/cmake-test/build/CMakePresets.json"
+    ]
+}

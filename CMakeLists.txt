@@ -8,9 +8,7 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 
-
-# add Eigen lib to be defined and built as dependency
-add_subdirectory(3rdparty)
+find_package(Eigen3 REQUIRED)
 
 # our main library and executable
 add_subdirectory(cgcustommath)

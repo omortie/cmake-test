@@ -30,10 +30,10 @@
 	<Fragment>
 		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
 			<Component Id="ProductLibrary">
-				<File Source="..\..\bin\cgcustommath.dll" />
+				<File Source="..\..\bin\Release\cgcustommath.dll" />
 			</Component>
 			<Component Id="ProductExecutable">
-				<File Source="..\..\bin\mat.exe" />
+				<File Source="..\..\bin\Release\mat.exe" />
 			</Component>
 		</ComponentGroup>
 	</Fragment>
