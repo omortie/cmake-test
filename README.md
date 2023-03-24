@@ -24,10 +24,7 @@ You have to install msvc-compiler on you Windows machine first and then
 try the following steps in order to build the project [follow this documentation](./docs/VSBuild.md)
 
 ### Mac
-*Dependencies:*
-
-* XCode installed on the system
-* CMake installed and added to the environment PATH
+to build the application in MacOS please [follow this documentation](./docs/MacBuild.md)
 
 Run these commands in order to create XCode project:
 
