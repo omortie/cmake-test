@@ -1,3 +1,6 @@
 [submodule "3rdparty/eigen"]
 	path = 3rdparty/eigen
 	url = https://gitlab.com/libeigen/eigen.git
+[submodule "3rdparty/create-dmg"]
+	path = 3rdparty/create-dmg
+	url = https://github.com/create-dmg/create-dmg
