@@ -58,3 +58,12 @@ then please run the following commands to make installer using provided Python s
 If everything goes right You can find your installer in ```installer/installer/bin/Release/installer.msi```
 
 ### Mac
+*Dependencies:*
+
+* Python in your environment PATH
+
+Just run the script provided in the scripts directory
+
+```cd scripts```
+
+```python create-installer-mac.py```
