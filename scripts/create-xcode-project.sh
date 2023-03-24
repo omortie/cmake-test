@@ -1,6 +1,9 @@
 #!/bin/bash
 
 cd ..
-mkdir xcode-build
-cd xcode-build
-cmake .. -GXcode -DCMAKE_C_COMPILER="$(xcrun -find cc)" -DCMAKE_CXX_COMPILER="$(xcrun -find c++)"
+conan profile detect --force
+conan install . -s build_type=Release --output-folder=build
+conan install . -s build_type=Debug --output-folder=build
+cd build
+cmake .. -GXcode -DCMAKE_TOOLCHAIN_FILE="conan_toolchain.cmake"
+
